@@ -4,18 +4,23 @@ import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-d
 
 function App() {
   return (
-    <Router>
-        <Navbar/>
-        <Routes>
-        <Route
-            exact
-            index
-            // path="/"
-            element={<About />}
-          />
-        </Routes>
-        <Footer/>
-    </Router>
+    <div>
+      <Navbar/>
+      <About />
+      <Footer/>
+    </div>
+    // <Router>
+    //     <Navbar/>
+    //     <Routes>
+    //     <Route
+    //         exact
+    //         index
+    //         // path="/"
+    //         element={<About />}
+    //       />
+    //     </Routes>
+    //     <Footer/>
+    // </Router>
   );
 }
 
