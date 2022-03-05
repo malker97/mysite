@@ -9,7 +9,8 @@ function App() {
         <Routes>
         <Route
             exact
-            path="/"
+            index
+            // path="/"
             element={<About />}
           />
         </Routes>
