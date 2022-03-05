@@ -9,8 +9,10 @@ import Grid from '@material-ui/core/Grid';
 import Typography from '@material-ui/core/Typography';
 import { withStyles } from '@material-ui/core/styles';
 import { DataGrid } from '@mui/x-data-grid';
+import { useEffect, useState } from "react";
 
 const styles = theme => ({
+
   heroUnit: {
     backgroundColor: theme.palette.background.paper,
   },
@@ -124,7 +126,12 @@ const languages = [
 
 function About(props) {
   const { classes } = props;
-
+//   componentDidMount() {
+//     document.title = "About";
+//   }
+    useEffect(() => {
+        document.title = "About Me"
+    }, []);
   return (
     <React.Fragment>
       <CssBaseline />
@@ -167,7 +174,7 @@ function About(props) {
           {/* End hero unit */}
           <Grid container spacing={40}>
             {techstack.map(card => (
-              <Grid item key={card} sm={3} md={3} lg={3}>
+              <Grid item key={card} sm={4} md={4} lg={4}>
                 <Card className={classes.card}>
                   <CardMedia
                     className={classes.cardMedia}
@@ -229,7 +236,7 @@ function About(props) {
           {/* End hero unit */}
           <Grid container spacing={40}>
             {educations.map(card => (
-              <Grid item key={card} sm={3} md={3} lg={3}>
+              <Grid item key={card} sm={6} md={6} lg={6}>
                 <Card className={classes.card}>
                   <CardMedia
                     className={classes.cardMedia}
@@ -260,7 +267,7 @@ function About(props) {
           {/* End hero unit */}
           <Grid container spacing={40}>
             {languages.map(card => (
-              <Grid item key={card} sm={3} md={3} lg={3}>
+              <Grid item key={card} sm={4} md={4} lg={4}>
                 <Card className={classes.card}>
                   <CardMedia
                     className={classes.cardMedia}
