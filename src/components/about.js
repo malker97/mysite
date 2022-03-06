@@ -10,6 +10,7 @@ import Typography from '@material-ui/core/Typography';
 import { withStyles } from '@material-ui/core/styles';
 import { DataGrid } from '@mui/x-data-grid';
 import { useEffect, useState } from "react";
+import SocialMedia from './socialmeida';
 
 const styles = theme => ({
 
@@ -133,15 +134,16 @@ function About(props) {
         document.title = "About Me"
     }, []);
   return (
-    <React.Fragment>
+    <React.Fragment> 
       <CssBaseline />
-      <main>
+      <main >
         {/* Hero unit */}
         <div className={classes.heroUnit}>
           <div className={classes.heroContent}>
             <Typography component="h1" variant="h2" align="center" color="textPrimary" gutterBottom>
               Zhengmao Zhang
             </Typography>
+            <SocialMedia/>
             <Typography variant="h6" align="center" color="textSecondary" paragraph>
                 {/* Thank you for your interest in our project, This WebApp is a web-hosted service that allow multiple users to edit the same calendar event at the same time. */}
                 hi, It's Zhengmao Zhang. I'm currently pursuing a master's degree in computational science at Portland State University. I got my two bachelor's degrees from Portland State University and Changchun University of Technology in 2021. Here are some of the courses I have taken:
