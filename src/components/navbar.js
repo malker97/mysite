@@ -18,10 +18,11 @@ import { useEffect, useState } from "react";
 //                'Project', 
 //                'Blog', 
 //                'Guestbook'];
-const pages = [{name:'About me Version 1',href: "/"},
+const pages = [{name:'About me Version 1',href: "/#"},
                 {name:'Project',href: "/project"},
                 {name:'Blog',href: "/blog"},
                 {name:'Guestbook',href: "/guestbook"},
+                {name:'Accouts',href: "/accounts"},
               ];
 // const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
 const settings = [];
