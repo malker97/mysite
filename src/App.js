@@ -1,5 +1,5 @@
 import './App.css';
-import { Navbar, Footer, About, GameAccounts} from './components';
+import { Navbar, Footer, About, GameAccounts, NotFound} from './components';
 import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-dom";
 
 function App() {
@@ -12,8 +12,12 @@ function App() {
     <Router>
         <Navbar/>
         <Routes>
-        <Route exact path='/' element={<About />}/>
-        <Route exact path="/accounts" element={<GameAccounts/>}/>
+        <Route index element={<About />}/>
+        <Route path='pages'>
+          <Route path="accounts" element={<GameAccounts/>}/>
+          <Route path="*" element={<NotFound/>}/>
+        </Route>
+        <Route path="*" element={<NotFound/>}/>
         </Routes>
         {/* <Footer/> */}
     </Router>
