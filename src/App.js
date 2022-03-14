@@ -12,7 +12,7 @@ function App() {
     <Router>
         <Navbar/>
         <Routes>
-        <Route exact index element={<About />}/>
+        <Route exact path='/' element={<About />}/>
         <Route exact path="/accounts" element={<GameAccounts/>}/>
         </Routes>
         {/* <Footer/> */}
