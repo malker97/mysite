@@ -92,8 +92,8 @@ const columns = [
     { id: 5, courseNum: 'CS410P', courseName: 'Front-End Web Development', age: 'A' ,description:'null' },
     { id: 6, courseNum: 'CS486', courseName: 'Introduction to Database Management Systems', age: 'B' ,description:'null' },
     { id: 7, courseNum: 'CS554', courseName: 'Software Engineering', age: 'B' , description:'null' },
-    
- 
+    { id: 8, courseNum: 'CS565', courseName: 'Full-Stack Web Development', age: 'A' , description:'null' },
+    { id: 9, courseNum: 'CS584', courseName: 'Algorithm DES/ANLYS', age: 'A' , description:'null' },
   ];
 const techstack = [
     {id: 1, name: 'React.js', imglink: "https://res.cloudinary.com/practicaldev/image/fetch/s--MLrhag65--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/pdib9r9rk5j1m7oala1p.png",description: 'Front End Framework'},
@@ -156,8 +156,8 @@ function About(props) {
                 rows={rows}
                 columns={columns}
                 pageSize={5}
-                rowsPerPageOptions={[5]}
-                checkboxSelection
+                // rowsPerPageOptions={[10]}
+                // checkboxSelection
                 disableSelectionOnClick
             />
         </div>
