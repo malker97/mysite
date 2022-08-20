@@ -85,15 +85,17 @@ const columns = [
   ];
   
   const rows = [
-    { id: 1, courseNum: 'CS410P', courseName: 'Blockchain Development and Security', age: 'B',description:'null' },
-    { id: 2, courseNum: 'CS492', courseName: 'Malware Reverse Engineering', age: 'A',description:'null'  },
-    { id: 3, courseNum: 'CS495', courseName: 'Web and Cloud Security', age: 'B' ,description:'null' },
-    { id: 4, courseNum: 'CS494P', courseName: 'Internetworking Protocols', age: 'A' ,description:'null' },
-    { id: 5, courseNum: 'CS410P', courseName: 'Front-End Web Development', age: 'A' ,description:'null' },
-    { id: 6, courseNum: 'CS486', courseName: 'Introduction to Database Management Systems', age: 'B' ,description:'null' },
-    { id: 7, courseNum: 'CS554', courseName: 'Software Engineering', age: 'B' , description:'null' },
-    { id: 8, courseNum: 'CS565', courseName: 'Full-Stack Web Development', age: 'A' , description:'null' },
-    { id: 9, courseNum: 'CS584', courseName: 'Algorithm DES/ANLYS', age: 'A' , description:'null' },
+    { id: 1, courseNum: 'CS510', courseName: 'Voice Assistance', age: 'A',description:'null' },
+    { id: 2, courseNum: 'CS510', courseName: 'Data Engineering', age: 'A',description:'null' },
+    { id: 3, courseNum: 'CS410P', courseName: 'Blockchain Development and Security', age: 'B',description:'null' },
+    { id: 4, courseNum: 'CS492', courseName: 'Malware Reverse Engineering', age: 'A',description:'null'  },
+    { id: 5, courseNum: 'CS495', courseName: 'Web and Cloud Security', age: 'B' ,description:'null' },
+    { id: 6, courseNum: 'CS494P', courseName: 'Internetworking Protocols', age: 'A' ,description:'null' },
+    { id: 7, courseNum: 'CS410P', courseName: 'Front-End Web Development', age: 'A' ,description:'null' },
+    { id: 8, courseNum: 'CS486', courseName: 'Introduction to Database Management Systems', age: 'B' ,description:'null' },
+    { id: 9, courseNum: 'CS554', courseName: 'Software Engineering', age: 'B' , description:'null' },
+    { id: 10, courseNum: 'CS565', courseName: 'Full-Stack Web Development', age: 'A' , description:'null' },
+    { id: 11, courseNum: 'CS584', courseName: 'Algorithm DES/ANLYS', age: 'A' , description:'null' },
   ];
 const techstack = [
     {id: 1, name: 'React.js', imglink: "https://res.cloudinary.com/practicaldev/image/fetch/s--MLrhag65--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/pdib9r9rk5j1m7oala1p.png",description: 'Front End Framework'},

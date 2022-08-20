@@ -18,11 +18,11 @@ import { useEffect, useState } from "react";
 //                'Project', 
 //                'Blog', 
 //                'Guestbook'];
-const pages = [{name:'About me Version 1',href: "/"},
+const pages = [{name:'About me',href: "/"},
                 {name:'Project',href: "/project"},
                 {name:'Blog',href: "/blog"},
                 {name:'Guestbook',href: "/guestbook"},
-                {name:'Accouts',href: "/accounts"},
+                {name:'Resume',href: "https://gateway.pinata.cloud/ipfs/QmTVLHGBr9F3dsn4CyiodNK5tL8ANrPxnkF8JaiAprfKYS"},
               ];
 // const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
 const settings = [];
