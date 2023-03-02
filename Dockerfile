@@ -14,7 +14,7 @@ WORKDIR /usr/share/nginx/html
 COPY default.conf /etc/nginx/conf.d/
 RUN rm -rf ./*
 # restart nginx
-RUN nginx -s reload
+RUN service nginx reload
 COPY --from=builder /app/build .
 EXPOSE 80
 ENTRYPOINT ["nginx", "-g", "daemon off;"]
