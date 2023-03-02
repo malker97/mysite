@@ -10,6 +10,8 @@ RUN npm run build
 # use nginx as server
 FROM nginx:1.21.0-alpine
 WORKDIR /usr/share/nginx/html
+# copy new nginx config to replace default config
+COPY default.conf /etc/nginx/conf.d/
 RUN rm -rf ./*
 COPY --from=builder /app/build .
 EXPOSE 80
