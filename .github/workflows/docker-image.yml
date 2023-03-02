@@ -28,4 +28,4 @@ jobs:
           context: .
           push: true
           # add md5 hash to image tag
-          tags: ${{ secrets.DOCKER_USERNAME }}/mysite:${{ github.sha }}
+          tags: ${{ secrets.DOCKER_USERNAME }}/mysite:latest
